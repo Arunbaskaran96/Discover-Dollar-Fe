@@ -1,0 +1,57 @@
+@import "../../styles/mixins.scss";
+@import "../../styles/variables.scss";
+
+.container{
+    background-color:rgb(176, 186, 31);
+    height: 8vh;
+    padding: 0px 25px;
+    @include flexContainer;
+    justify-content: space-between;
+}
+
+.img{
+    height: 7vh;
+    width: 50px;
+    object-fit: contain;
+}
+
+.icon{
+    height: 6vh;
+    aspect-ratio: 1/1;
+}
+
+.account{
+    @include flexContainer;
+    justify-content: space-between;
+    gap: 7px;
+    transition: all 0.5s;
+    padding: 0px 5px;
+    p{
+        color: white;
+        font-size: 18px;
+    }
+    &:hover{
+        cursor: pointer;
+        background-color: rgba(109, 116, 13, 0.815);
+        border-radius: 10px;
+    }
+}
+.topbarRight{
+    @include flexContainer;
+    gap: 10px;
+}
+
+
+.inputContainer{
+    background-color: $bg_color_light;
+    padding: 0px 10px;
+    border-radius: 10px;
+    input{
+        background-color: transparent;
+        border: none;
+        outline: none;
+        height: 38px;
+        width: 350px;
+        font-size: 13px;
+    }
+}
