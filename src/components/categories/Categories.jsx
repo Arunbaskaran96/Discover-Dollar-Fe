@@ -14,12 +14,7 @@ function Categories() {
               <img src={menu.img} alt="category image" />
               <div>
                 <div className={classes.text}>{menu.name}</div>
-                <img
-                  className={classes.arrow}
-                  //   src="https://png.pngtree.com/png-vector/20190419/ourmid/pngtree-vector-up-arrow-icon-png-image_956434.jpg"
-                  alt="icom"
-                  src={arrowdown}
-                />
+                <img className={classes.arrow} alt="icom" src={arrowdown} />
               </div>
             </li>
           );

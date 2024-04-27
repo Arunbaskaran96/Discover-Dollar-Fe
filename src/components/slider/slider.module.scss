@@ -1,0 +1,18 @@
+.image{
+    height: 350px;
+    width: 100%;
+}
+.slideContainer{
+    position: relative;
+    .content{
+        position: absolute;
+        font-size: 30px;
+        color: black;
+        top: 170px;
+        left: 500px;
+        text-align: center;
+        p{
+            font-size: 16px;
+        }
+    }
+}
