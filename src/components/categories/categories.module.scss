@@ -1,0 +1,38 @@
+@import "../../styles/mixins.scss";
+
+.menulistContainer{
+    @include flexContainer;
+    justify-content: space-between;
+    padding: 0px 50px;
+    height: 30vh;
+}
+
+.list{
+    border: 1px solid black;
+    padding: 10px 15px;
+    cursor: pointer;
+    text-align: center;
+    width: 180px;
+    img{
+        height: 80px;
+        aspect-ratio: 1/1;
+        object-fit: contain;
+    }
+    .text{
+        font-size: 18px;
+        font-weight: 500;
+    }
+    div{
+        @include flexContainer;
+        position: relative;
+        justify-content: center;
+    }
+}
+.arrow{
+    height: 15px;
+    width: 22px;
+    padding: 0px;
+    margin: 0px;
+    position: absolute;
+    right: 10px;
+}
