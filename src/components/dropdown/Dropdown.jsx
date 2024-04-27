@@ -5,7 +5,7 @@ function Dropdown({ item, handleMouseEnter, handleMouseLeave, showDropdown }) {
   //   console.log(showDropdown);
   return (
     <div className={classes.listContainer}>
-      {!item.children && <p className={classes.sublist}>{item.name}</p>}
+      {!item.children && <p className={classes.name}>{item.name}</p>}
       {item.children && (
         <div className={classes.main}>
           <p
@@ -13,13 +13,18 @@ function Dropdown({ item, handleMouseEnter, handleMouseLeave, showDropdown }) {
             onMouseEnter={() => handleMouseEnter(item.id)}
             onMouseLeave={() => handleMouseLeave(item.id)}
           >
-            {item.name}
+            <p
+              className={`${classes.name} ${
+                showDropdown[item.id] && classes.active
+              }`}
+            >
+              {item.name}
+            </p>
             {showDropdown[item.id] && (
               <div className={classes.subcategory}>
                 {showDropdown[item.id] &&
                   item.children.map((menu) => {
                     return (
-                      // <p className={classes.sublist}>{menu.name}</p>
                       <Dropdown
                         key={menu.id}
                         item={menu}

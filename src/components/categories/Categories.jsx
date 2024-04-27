@@ -25,58 +25,11 @@ function Categories() {
   };
 
   return (
-    // <div className={classes.container}>
-    //   <ul className={classes.lists}>
-    //     {menuitems.map((menu) => {
-    //       if (!menu.children) {
-    //         return (
-    //           <li className={classes.list} key={menu.id}>
-    //             <img src={menu.img} alt="category image" />
-    //             <div>
-    //               <div className={classes.text}>{menu.name}</div>
-    //             </div>
-    //           </li>
-    //         );
-    //       }
-    //       return (
-    //         <li
-    //           onMouseEnter={() => handleMouseEnter(menu.id)}
-    //           onMouseLeave={() => handleMouseLeave(menu.id)}
-    //           className={`${classes.list} ${classes.listhover}`}
-    //           key={menu.id}
-    //         >
-    //           <img src={menu.img} alt="category image" />
-    //           <div>
-    //             <div className={classes.text}>{menu.name}</div>
-    //             <img className={classes.arrow} alt="icom" src={arrowdown} />
-    //           </div>
-    //           <div className={classes.submenu}>
-    //             {ShowDropdown[menu.id] &&
-    //               menu.children.map((item) => {
-    //                 return (
-    //                   <Dropdown
-    //                     key={item.id}
-    //                     item={item}
-    //                     handleMouseEnter={handleMouseEnter}
-    //                     handleMouseLeave={handleMouseLeave}
-    //                     ShowDropdown={ShowDropdown}
-    //                   />
-    //                 );
-    //               })}
-    //           </div>
-    //         </li>
-    //       );
-    //     })}
-    //   </ul>
-    // </div>
     <div className={classes.categoryContainer}>
       <ul className={classes.lists}>
         {menuitems.map((menu) => {
           if (!menu.children) {
             return (
-              // <li className={classes.list} key={menu.id}>
-              //   <span>{menu.name}</span>
-              // </li>
               <li className={classes.list} key={menu.id}>
                 <img src={menu.img} alt="category image" />
                 <div>
@@ -92,13 +45,18 @@ function Categories() {
               onMouseEnter={() => handleMouseEnter(menu.id)}
               onMouseLeave={() => handleMouseLeave(menu.id)}
             >
-              <>
+              <div
+                className={` ${classes.categoryBox} ${
+                  showDropdown[menu.id] && classes.active
+                }`}
+              >
                 <img src={menu.img} alt="category image" />
-                <div className={classes.title}>
+                <div className={`${classes.title}`}>
                   <div className={classes.text}>{menu.name}</div>
-                  <img className={classes.arrow} alt="icon" src={arrowdown} />
+                  {/* <img className={classes.arrow} alt="icon" src={arrowdown} /> */}
+                  {showDropdown[menu.id] ? <p>⬆</p> : <p>⬇</p>}
                 </div>
-              </>
+              </div>
               {/* <List item={menu} /> */}
               {showDropdown[menu.id] && (
                 <div className={classes.submenu}>
