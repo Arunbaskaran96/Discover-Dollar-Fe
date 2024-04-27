@@ -4,16 +4,73 @@
         "id":1,
         "name":"Grocery",
         "img":"https://rukminim1.flixcart.com/flap/64/64/image/29327f40e9c4d26b.png?q=100"
+
     },
     {
         "id":2,
         "name":"Mobiles",
-        "img":"https://rukminim1.flixcart.com/flap/64/64/image/22fddf3c7da4c4f4.png?q=100"
+        "img":"https://rukminim1.flixcart.com/flap/64/64/image/22fddf3c7da4c4f4.png?q=100",
+        "children":[
+            {
+                "id":"50",
+                "name":"Iphone",
+                "children":[
+                    {
+                        "id":"100",
+                        "name":"Iphone 13 pro max"
+                    },
+                    {
+                        "id":"101",
+                        "name":"Iphone 13 pro max"
+                    },
+                    {
+                        "id":"102",
+                        "name":"Iphone 13 pro max"
+                    },
+                    {
+                        "id":"103",
+                        "name":"Iphone 13 pro max"
+                    }
+                ]
+            },
+            {
+                "id":"51",
+                "name":"Samsung",
+                "children":[
+                    {
+                        "id":"200",
+                        "name":"Galaxy S9 Edge"
+                    },
+                    {
+                        "id":"201",
+                        "name":"Galaxy S7 Edge"
+                    }
+                ]
+            },
+            {
+                "id":"52",
+                "name":"Nokia"
+            },
+            {
+                "id":"53",
+                "name":"One Plus"
+            },
+            {
+                "id":"54",
+                "name":"Vivo"
+            }
+        ]
     },
     {
         "id":3,
         "name":"Fashion",
-        "img":"https://rukminim1.flixcart.com/fk-p-flap/64/64/image/0d75b34f7d8fbcb3.png?q=100"
+        "img":"https://rukminim1.flixcart.com/fk-p-flap/64/64/image/0d75b34f7d8fbcb3.png?q=100",
+        "children":[
+            {
+                "id":"60",
+                "name":""
+            }
+        ]
     },
     {
         "id":4,

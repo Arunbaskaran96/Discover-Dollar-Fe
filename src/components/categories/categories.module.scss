@@ -1,38 +1,192 @@
 @import "../../styles/mixins.scss";
+@import "../../styles/variables.scss";
 
-.menulistContainer{
-    @include flexContainer;
-    justify-content: space-between;
-    padding: 0px 50px;
-    height: 30vh;
+// // .menulistContainer{
+// //     @include flexContainer;
+// //     justify-content: space-between;
+// //     padding: 0px 50px;
+// //     height: 30vh;
+// // }
+
+// .list{
+//     // border: 1px solid black;
+//     padding: 10px 15px;
+//     cursor: pointer;
+//     text-align: center;
+//     width: 180px;
+//     img{
+//         height: 80px;
+//         aspect-ratio: 1/1;
+//         object-fit: contain;
+//     }
+
+//     div{
+//         @include flexContainer;
+//         position: relative;
+//         justify-content: center;
+//     }
+// }
+// .arrow{
+//     height: 15px;
+//     width: 22px;
+//     padding: 0px;
+//     margin: 0px;
+//     position: absolute;
+//     right: 10px;
+// }
+
+// // .submenu{
+// //     position: absolute;
+// //     width: 120px;
+// //     background-color: whitesmoke;
+// //   }
+
+// .lists{
+//     display: flex;
+//     list-style-type: none;
+//     align-items: center;
+//     justify-content: space-between;
+//     height: 30vh;
+//   }
+
+//   .list{
+//     cursor: pointer;
+//   }
+  
+//   .listhover{
+//     position:relative;
+//   }
+
+
+/* .container{
+  display: flex;
+  height: 40px;
+  justify-content: space-between;
+  align-items: center;
+  background-color: teal;
+  padding: 0px 30px;
 }
 
+.topbar{
+  display: flex;
+}
+
+
+.lists{
+  display: flex;
+  gap: 20px;
+}
 .list{
-    border: 1px solid black;
-    padding: 10px 15px;
-    cursor: pointer;
-    text-align: center;
-    width: 180px;
-    img{
-        height: 80px;
-        aspect-ratio: 1/1;
-        object-fit: contain;
-    }
-    .text{
+  list-style-type: none;
+  position: relative;
+}
+
+.list a{text-decoration: none;color: black;}
+
+
+.listContainer{
+  height: 30px;
+  width: 250px;
+  background-color: whitesmoke;
+}
+
+.subcate{
+  position: absolute;
+  width: 150px;
+  background-color: whitesmoke;
+}
+
+.last{
+  position: absolute;
+  left: 100%;
+  top: 0px;
+}
+ */
+
+
+  
+  .lists{
+    display: flex;
+    height: 30vh;
+    align-items: center;
+    justify-content: space-between;
+    list-style-type: none;
+    padding: 0px 100px;
+  }
+      .text{
         font-size: 18px;
         font-weight: 500;
     }
-    div{
-        @include flexContainer;
+  
+  .list{
+    cursor: pointer;
+        img{
+        height: 100px;
+        aspect-ratio: 1/1;
+        object-fit: contain;
+    }
+    
+  }
+  
+  .listhover{
+    position:relative;
+  }
+  
+  .submenu{
+    position: absolute;
+    // width: 120px;
+    background-color: $bg_dropdown_light;
+  }
+//   .subcategory{
+//     position: absolute;
+//     left: 100%;
+//     width: 150px;
+//     background-color:whitesmoke;
+//   }
+
+  .title{
+    position: relative;
+    @include flexContainer;
         position: relative;
         justify-content: center;
-    }
-}
+  }
+  
+  .main{
+    position: relative;
+  }
+  
+
+  .lists .list{
+    padding: 10px 0px;
+
+  }
+  .lists .list .submenu{
+    z-index: 9999;
+    font-size: 20px;
+    width: 200px;
+    padding: 10px 15px;
+    border-radius: 10px;
+    min-height: 250px;
+  }
+
+  .lists .list .submenu p {
+    margin-top: 15px;
+  }
+  
+  .lists .list:last-child .submenu{
+    background-color: teal;
+    right: 0;
+  }
+  
+  .lists .list:last-child .submenu .subcategory{
+    left: -125%;
+  }
+
 .arrow{
     height: 15px;
     width: 22px;
     padding: 0px;
     margin: 0px;
     position: absolute;
-    right: 10px;
+    right: -10px;
 }
