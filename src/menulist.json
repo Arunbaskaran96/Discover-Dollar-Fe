@@ -17,11 +17,11 @@
                 "children":[
                     {
                         "id":100,
-                        "name":"Iphone 13 pro max"
+                        "name":"Iphone 11 pro max"
                     },
                     {
                         "id":101,
-                        "name":"Iphone 13 pro max"
+                        "name":"Iphone 12 pro max"
                     },
                     {
                         "id":102,
@@ -29,7 +29,7 @@
                     },
                     {
                         "id":103,
-                        "name":"Iphone 13 pro max"
+                        "name":"Iphone 14 pro max"
                     }
                 ]
             },
@@ -49,15 +49,53 @@
             },
             {
                 "id":52,
-                "name":"Nokia"
+                "name":"Nokia",
+                "children":[
+                    {
+                        "id":220,
+                        "name":"Lumina 650"
+                    },
+                    {
+                        "id":221,
+                        "name":"Lumina 800"
+                    },
+                    {
+                        "id":222,
+                        "name":"Lumina c88"
+                    }
+                ]
             },
             {
                 "id":53,
-                "name":"One Plus"
+                "name":"One Plus",
+                "children":[
+                    {
+                        "id":200,
+                        "name":"Nord Ce 2"
+                    },
+                    {
+                        "id":200,
+                        "name":"Nord Ce 3 lite"
+                    },
+                    {
+                        "id":200,
+                        "name":"one plus 11 pro"
+                    }
+                ]
             },
             {
                 "id":54,
-                "name":"Vivo"
+                "name":"Vivo",
+                "children":[
+                    {
+                        "id":230,
+                        "name":"Vivo v57"
+                    },
+                    {
+                        "id":231,
+                        "name":"Vivo v27"
+                    }
+                ]
             }
         ]
     },
@@ -68,14 +106,104 @@
         "children":[
             {
                 "id":60,
-                "name":"Men"
+                "name":"Men",
+                "children":[
+                    {
+                        "id":601,
+                        "name":"Casual"
+                    },
+                    {
+                        "id":602,
+                        "name":"Office Wear"
+                    },
+                    {
+                        "id":603,
+                        "name":"T Shirts"
+                    }
+                ]
+            },
+            {
+                "id":61,
+                "name":"Women",
+                "children":[
+                    {
+                        "id":650,
+                        "name":"Saree's"
+                    },
+                    {
+                        "id":651,
+                        "name":"Kurtas's"
+                    },
+                    {
+                        "id":652,
+                        "name":"Ethinc"
+                    },
+                    {
+                        "id":653,
+                        "name":"Gowns"
+                    }
+                ]
+            },
+            {
+                "id":62,
+                "name":"Kids",
+                "children":[
+                    {
+                        "id":650,
+                        "name":"T Shirts"
+                    },
+                    {
+                        "id":651,
+                        "name":"Jeans"
+                    },
+                    {
+                        "id":652,
+                        "name":"Cotton Dress"
+                    },
+                    {
+                        "id":653,
+                        "name":"Shorts"
+                    }
+                ]
+            },
+            {
+                "id":63,
+                "name":"Men Footwear",
+                "children":[
+                    {
+                        "id":670,
+                        "name":"Casual"
+                    },
+                    {
+                        "id":671,
+                        "name":"Fromal"
+                    }
+                ]
             }
         ]
     },
     {
         "id":4,
         "name":"Electronics",
-        "img":"https://rukminim1.flixcart.com/flap/64/64/image/69c6589653afdb9a.png?q=100"
+        "img":"https://rukminim1.flixcart.com/flap/64/64/image/69c6589653afdb9a.png?q=100",
+        "children":[
+            {
+                "id":"280",
+                "name":"TV"
+            },
+            {
+                "id":"280",
+                "name":"Speakers"
+            },
+            {
+                "id":"280",
+                "name":"AC"
+            },
+            {
+                "id":"280",
+                "name":"Fridge"
+            }
+        ]
     },
     {
         "id":5,
