@@ -8,7 +8,7 @@ function Dropdown({ item, handleMouseEnter, handleMouseLeave, showDropdown }) {
       {!item.children && <p className={classes.name}>{item.name}</p>}
       {item.children && (
         <div className={classes.main}>
-          <p
+          <div
             className={classes.title}
             onMouseEnter={() => handleMouseEnter(item.id)}
             onMouseLeave={() => handleMouseLeave(item.id)}
@@ -35,7 +35,7 @@ function Dropdown({ item, handleMouseEnter, handleMouseLeave, showDropdown }) {
                   })}
               </div>
             )}
-          </p>
+          </div>
         </div>
       )}
     </div>
