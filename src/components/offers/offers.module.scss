@@ -41,3 +41,26 @@
         font-size: 20px;
     }
 }
+
+.container{
+    h4{
+        div{
+            display: flex;
+            align-items: center;
+            span{
+                color: red;
+                font-size: 15px;
+            }
+        }
+
+    }
+}
+.deal{
+    height: 30px;
+    aspect-ratio: 1/1;
+}
+
+.header{
+    display: flex;
+    gap: 10xp;
+}
