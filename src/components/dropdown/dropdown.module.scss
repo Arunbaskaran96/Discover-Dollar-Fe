@@ -1,8 +1,4 @@
 
-  
-//   .main{
-//     position: relative;
-//   }
 
   .subcategory{
     position: absolute;
@@ -15,9 +11,9 @@
     padding: 15px 10px;
     min-height: 250px;
     transform: scale(0);
-    animation: subcategaoryanimate 150ms ease-in-out 250ms;
+    animation: subcategaoryanimate 150ms ease-in-out 150ms;
     animation-fill-mode: forwards;
-    transition: all 0.5s;
+    transition:500ms;
     p{
         &:hover{
             background-color: grey;
@@ -33,13 +29,18 @@
   
 
   .active{
-    background-color: grey;
-
-}
+    transition: all 0.5s;
+     &:hover{
+      background-color: grey;
+     }
+  }
 
 .name{
     width: 100%;
     padding: 10px;
+    transition: all 0.5s;
+    &:hover{
+     background-color: grey;
+    }
 }
-
 

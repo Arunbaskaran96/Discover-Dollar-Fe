@@ -53,13 +53,13 @@ function Categories() {
                 <img src={menu.img} alt="category image" />
                 <div className={`${classes.title}`}>
                   <div className={classes.text}>{menu.name}</div>
-                  {/* <img className={classes.arrow} alt="icon" src={arrowdown} /> */}
                   {showDropdown[menu.id] ? <p>⬆</p> : <p>⬇</p>}
                 </div>
               </div>
-              {/* <List item={menu} /> */}
               {showDropdown[menu.id] && (
-                <div className={classes.submenu}>
+                <div
+                  className={`${classes.submenu} ${classes.submenuanimation}`}
+                >
                   {showDropdown[menu.id] &&
                     menu.children.map((item) => {
                       return (

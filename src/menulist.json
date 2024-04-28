@@ -12,51 +12,51 @@
         "img":"https://rukminim1.flixcart.com/flap/64/64/image/22fddf3c7da4c4f4.png?q=100",
         "children":[
             {
-                "id":"50",
+                "id":50,
                 "name":"Iphone",
                 "children":[
                     {
-                        "id":"100",
+                        "id":100,
                         "name":"Iphone 13 pro max"
                     },
                     {
-                        "id":"101",
+                        "id":101,
                         "name":"Iphone 13 pro max"
                     },
                     {
-                        "id":"102",
+                        "id":102,
                         "name":"Iphone 13 pro max"
                     },
                     {
-                        "id":"103",
+                        "id":103,
                         "name":"Iphone 13 pro max"
                     }
                 ]
             },
             {
-                "id":"51",
+                "id":51,
                 "name":"Samsung",
                 "children":[
                     {
-                        "id":"200",
+                        "id":200,
                         "name":"Galaxy S9 Edge"
                     },
                     {
-                        "id":"201",
+                        "id":201,
                         "name":"Galaxy S7 Edge"
                     }
                 ]
             },
             {
-                "id":"52",
+                "id":52,
                 "name":"Nokia"
             },
             {
-                "id":"53",
+                "id":53,
                 "name":"One Plus"
             },
             {
-                "id":"54",
+                "id":54,
                 "name":"Vivo"
             }
         ]
@@ -67,8 +67,8 @@
         "img":"https://rukminim1.flixcart.com/fk-p-flap/64/64/image/0d75b34f7d8fbcb3.png?q=100",
         "children":[
             {
-                "id":"60",
-                "name":""
+                "id":60,
+                "name":"Men"
             }
         ]
     },
@@ -88,11 +88,11 @@
         "img":"https://rukminim1.flixcart.com/fk-p-flap/64/64/image/0139228b2f7eb413.jpg?q=100",
         "children":[
             {
-                "id":"300",
+                "id":300,
                 "name":"Fridge"
             },
             {
-                "id":"301",
+                "id":301,
                 "name":"TV",
                 "children":[
                     {
@@ -106,7 +106,7 @@
                 ]
             },
             {
-                "id":"302",
+                "id":302,
                 "name":"Ac"
             }
         ]
