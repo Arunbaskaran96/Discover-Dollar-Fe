@@ -6,11 +6,19 @@ import cart from "../../assets/cart1.svg";
 import menuitems from "../../menulist.json";
 import arrayFlatern from "../../utils/arrayFlat";
 import Suggestion from "../suggestion/Suggestion";
+import moon from "../../assets/moon.svg";
+import sun from "../../assets/sun.svg";
+import { themeState } from "../../context/themeContext";
 
 function Topbar() {
   const menuItems = arrayFlatern(menuitems);
   const [serachTerm, setSearchTerm] = useState("");
   const [searchQueryResult, setSearchQueryResult] = useState([]);
+  const { toggle, themeAction } = themeState();
+
+  const clickThemeHandler = () => {
+    themeAction();
+  };
 
   const clickHandler = (item) => {
     alert(`you have searched ${item}`);
@@ -44,6 +52,13 @@ function Topbar() {
         </div>
       </div>
       <div className={classes.topbarRight}>
+        <div className={classes.themeContainer} onClick={clickThemeHandler}>
+          <img
+            className={`${classes.themeIcon} ${classes.icon}`}
+            src={toggle ? sun : moon}
+            alt="icon"
+          />
+        </div>
         <div className={classes.account}>
           <img className={classes.icon} src={person} alt="icon" />
           <p>Account</p>

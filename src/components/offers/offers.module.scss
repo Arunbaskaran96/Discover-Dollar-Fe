@@ -1,0 +1,43 @@
+
+.img{
+    height: 170px;
+    aspect-ratio: 1/1;
+}
+
+.productsContainer{
+    margin-top: 20px;
+    padding: 0px 30px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    text-align: center;
+    gap:50px;
+    .productContainer{
+        border: 1px solid black;
+        cursor: pointer;
+        transition: all 0.5s;
+        &:hover{
+            background-color: grey;
+        }
+        h5{
+            font-size: 18px;
+        }
+        .priceContainer{
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            .offer{
+                color: red;
+                font-size: 18px;
+                font-weight: 700;
+            }
+        }
+    }
+}
+
+.container{
+    margin-top: 20px;
+    h4{
+        padding-left: 25px;
+        font-size: 20px;
+    }
+}

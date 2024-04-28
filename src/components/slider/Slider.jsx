@@ -8,7 +8,7 @@ function Slider() {
         <swiper-slide>
           <img
             className={classes.image}
-            src="https://e-commerce-pied-xi.vercel.app/_next/image?url=%2Fimages%2Fhome%2Fbanner.webp&w=1920&q=75"
+            src="https://images-eu.ssl-images-amazon.com/images/G/31/prime/MayART24/ACQ/GW/New_MayART24_GW_PC_Hero._CB559897147_.jpg"
             alt="imag"
           />
         </swiper-slide>
