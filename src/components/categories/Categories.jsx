@@ -31,7 +31,9 @@ function Categories() {
               <li className={classes.list} key={menu.id}>
                 <img src={menu.img} alt="category image" />
                 <div>
-                  <div className={classes.text}>{menu.name}</div>
+                  <div style={{ textAlign: "center" }} className={classes.text}>
+                    {menu.name}
+                  </div>
                 </div>
               </li>
             );
