@@ -1,4 +1,3 @@
-// import menuItems from "../menulist.json";
 const arrayFlatern = (arr) => {
   let result = [];
 
@@ -9,10 +8,8 @@ const arrayFlatern = (arr) => {
     } else {
       result.push(arr[i].name);
     }
-    // console.log(arr[i]);
   }
   return result;
 };
 
 export default arrayFlatern;
-// console.log(arrayFlatern(menuItems));

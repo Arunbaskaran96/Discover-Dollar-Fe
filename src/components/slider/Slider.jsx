@@ -16,13 +16,9 @@ function Slider() {
           <div className={classes.slideContainer}>
             <img
               className={classes.image}
-              src="https://img.freepik.com/premium-photo/portrait-photo-man-holding-cellphone-countryside_529197-692.jpg"
+              src="https://images-eu.ssl-images-amazon.com/images/G/31/img21/OHL/GW/CML/New/April/PC_CML_2X._CB559496480_.jpg"
               alt="imag"
             />
-            <div className={classes.content}>
-              <h6>Launch Soon</h6>
-              <p>Mark the date on your calendar</p>
-            </div>
           </div>
         </swiper-slide>
       </swiper-container>

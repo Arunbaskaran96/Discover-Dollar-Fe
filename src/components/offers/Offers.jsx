@@ -34,7 +34,9 @@ function Offers() {
   ];
   return (
     <div className={classes.container}>
-      <h4>Today's Deals</h4>
+      <h4>
+        Today's Deals - <span>Ends in </span>
+      </h4>
       <div className={classes.productsContainer}>
         {products.map((product, index) => {
           return (

@@ -1,8 +1,6 @@
 import React, { useState } from "react";
 import classes from "./categories.module.scss";
 import menuitems from "../../menulist.json";
-import arrowup from "../../assets/arrowup.svg";
-import arrowdown from "../../assets/arrowdown.svg";
 import Dropdown from "../dropdown/Dropdown";
 
 function Categories() {
