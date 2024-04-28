@@ -24,22 +24,22 @@ function Dropdown({ item, handleMouseEnter, handleMouseLeave, showDropdown }) {
             }`}
           >
             {item.name}
+            {showDropdown[item.id] && (
+              <div className={`${classes.subcategory} ${classes.subcate}`}>
+                {showDropdown[item.id] &&
+                  item.children.map((menu) => {
+                    return (
+                      <Dropdown
+                        key={menu.id}
+                        item={menu}
+                        handleMouseEnter={handleMouseEnter}
+                        handleMouseLeave={handleMouseLeave}
+                      />
+                    );
+                  })}
+              </div>
+            )}
           </p>
-          {showDropdown[item.id] && (
-            <div className={`${classes.subcategory} ${classes.subcate}`}>
-              {showDropdown[item.id] &&
-                item.children.map((menu) => {
-                  return (
-                    <Dropdown
-                      key={menu.id}
-                      item={menu}
-                      handleMouseEnter={handleMouseEnter}
-                      handleMouseLeave={handleMouseLeave}
-                    />
-                  );
-                })}
-            </div>
-          )}
         </div>
       )}
     </div>
